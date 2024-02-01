@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tristate.MotdPage"
+             Title="Message Of The Day">
+    <VerticalStackLayout>
+        <Label 
+            Text="To Bring Together those Who Appreciate the Night Sky!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Frame
+            Margin="20">
+            
+            <Label
+                LineHeight="1.5">
+                The TriState Astronomers is a group of amateur astronomers from the area surrounding Hagerstown, MD. &amp; Washington County. Since 1985, we have enjoyed sharing the ageless wonders of the night sky.
+            </Label>
+            
+        </Frame>
+
+        <Image 
+            Margin="20"
+            HeightRequest="200"
+            Source="tsa_logo2.jpg"></Image>
+
+        <!--<Label
+            Padding="20">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span>some text </Span>
+                    <Span Text=" here"
+                        TextColor="Blue"
+                        TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                CommandParameter="https://learn.microsoft.com/dotnet/maui/" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+                
+            </Label.FormattedText>
+            
+        </Label>-->
+
+        <Label
+            Text="click here for a link"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://www.tristateastronomers.org/home"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+            
+        </Label>
+        
+    </VerticalStackLayout>
+</ContentPage>

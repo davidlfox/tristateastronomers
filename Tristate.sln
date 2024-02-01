@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tristate", "Tristate.csproj", "{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5046C9DE-7F70-4BA6-9DF3-78B8E50AAC79}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59041F97-0683-4F9E-A15F-D55A9FB00B22}
+	EndGlobalSection
+EndGlobal
