@@ -1,0 +1,11 @@
+dev environment
+- install .net 8
+- install visual studio
+- `dotnet workload install {platform}`
+  - run this for each platform you want
+  - `dotnet workload install maui` will simply install all platforms, but you probably want `maui-windows` `maui-android` and `maui-ios`
+- open solution
+- can try to run in windows natively if youre on pc
+- otherwise, create an android emulator (not detailed here but you can do it completely within visual studio)
+- run it
+- file and issue if it doesnt work--pretty sure its self-contained for now
