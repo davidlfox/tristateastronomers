@@ -57,7 +57,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\calendar.svg" />
+	  <None Remove="Resources\Images\cloud.svg" />
+	  <None Remove="Resources\Images\envelope.svg" />
+	  <None Remove="Resources\Images\facebook.svg" />
+	  <None Remove="Resources\Images\gears.svg" />
+	  <None Remove="Resources\Images\instagram.svg" />
+	  <None Remove="Resources\Images\KLWX_loop.gif" />
+	  <None Remove="Resources\Images\logo_transparent_blacktext.png" />
+	  <None Remove="Resources\Images\logo_transparent_whitetext.png" />
 	  <None Remove="Resources\Images\tsa_logo2.jpg" />
+	  <None Remove="Resources\Images\user_group.svg" />
+	  <None Remove="Resources\Images\x_twitter.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +83,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MotdPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\DarkTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\LightTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SocialPage.xaml">

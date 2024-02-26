@@ -2,13 +2,40 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Tristate"
-             x:Class="Tristate.App">
+             x:Class="Tristate.App"
+             >
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Resources/Styles/LightTheme.xaml">
+            <!--<ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>-->
+            <Style TargetType="TabBar">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource FrameBackgroundColor}"></Setter>
+                <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource PrimaryTextColor}"></Setter>
+                <Setter Property="Shell.TabBarForegroundColor" Value="{DynamicResource PrimaryTextColor}"></Setter>
+                <Setter Property="Shell.UnselectedColor" Value="{DynamicResource SecondaryTextColor}"></Setter>
+                <Setter Property="Shell.BackgroundColor" Value="{DynamicResource NavigationBarColor}"></Setter>
+            </Style>
+            <Style TargetType="ContentPage">
+                <!-- setting BackgroundColor doesnt work... --> 
+                <!--<Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}"></Setter>-->
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}"></Setter>
+                <Setter Property="CornerRadius" Value="5"></Setter>
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}"></Setter>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{DynamicResource ButtonColor}"></Setter>
+            </Style>
         </ResourceDictionary>
+
+        
     </Application.Resources>
 </Application>

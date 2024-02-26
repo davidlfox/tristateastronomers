@@ -5,28 +5,34 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Tristate"
     Shell.FlyoutBehavior="Disabled"
-    Title="Tristate">
+    Title="Tristate"
+    >
 
     <TabBar Title="TabBar Title">
         <ShellContent 
             Title="MOTD" 
             ContentTemplate="{DataTemplate local:MotdPage}" 
-            Icon="dotnet_bot.png">
+            Icon="envelope.svg">
         </ShellContent>
         <ShellContent 
             Title="Weather" 
             ContentTemplate="{DataTemplate local:WeatherPage}" 
-            Icon="dotnet_bot.png">
+            Icon="cloud.svg">
         </ShellContent>
         <ShellContent 
             Title="Calendar" 
             ContentTemplate="{DataTemplate local:CalendarPage}" 
-            Icon="dotnet_bot.png">
+            Icon="calendar.svg">
         </ShellContent>
         <ShellContent 
             Title="Social" 
             ContentTemplate="{DataTemplate local:SocialPage}" 
-            Icon="dotnet_bot.png">
+            Icon="user_group.svg">
+        </ShellContent>
+        <ShellContent 
+            Title="Settings" 
+            ContentTemplate="{DataTemplate local:SettingsPage}" 
+            Icon="gears.svg">
         </ShellContent>
     </TabBar>
 

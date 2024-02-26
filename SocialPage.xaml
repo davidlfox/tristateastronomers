@@ -2,11 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tristate.SocialPage"
-             Title="SocialPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Social Links"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                Margin="0,20,0,0"
+                Text="TSA on X"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenXCommand}"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Image
+                Source="x_twitter.svg"
+                WidthRequest="100"
+                />
+
+            <Label 
+                Margin="0,20,0,0"
+                Text="TSA on Facebook"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="facebook.svg"
+                WidthRequest="100"
+                />
+
+            <Label 
+                Margin="0,20,0,0"
+                Text="TSA on Instagram"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="instagram.svg"
+                WidthRequest="100"
+                />  
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

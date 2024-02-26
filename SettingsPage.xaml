@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tristate.SettingsPage"
+             Title="SettingsPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             >
+    <VerticalStackLayout>
+        <Label 
+            Margin="0,20,0,0"
+            Text="Theme"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+
+        <HorizontalStackLayout 
+            HorizontalOptions="Center" 
+            BackgroundColor="{DynamicResource SwitchBackgroundColor}"
+            >
+
+            <Label Text="Light" Margin="20,12,20,0"></Label>
+        
+            <Switch
+                x:Name="themeSwitch"
+                Toggled="themeSwitch_Toggled"
+                BackgroundColor="{DynamicResource SwitchBackgroundColor}"
+                />
+
+            <Label Text="Dark" Margin="20,12,20,0"></Label>
+
+        </HorizontalStackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

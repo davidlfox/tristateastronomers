@@ -2,11 +2,93 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tristate.WeatherPage"
-             Title="WeatherPage">
+             Title="Weather Page"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             >
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            Text="Beaver Creek Clear Sky Chart" />
+
+        <!--<Frame
+            Margin="20">-->
+            <Image
+                WidthRequest="350"
+                Source="https://www.cleardarksky.com/c/BvrCrkObMDcsk.gif?c=2739639"
+                ></Image>
+
+        <!--</Frame>-->
+        
+        <!--<BoxView 
+            Margin="0,10,0,20"
+            HeightRequest="1" 
+            Color="Black"></BoxView>-->
+
+        <VerticalStackLayout
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            >
+            <Border
+                StrokeShape="RoundRectangle 5,5,0,0"
+                Background="{DynamicResource FrameBackgroundColor}"
+                Padding="10"
+                >
+                <Label Text="Current Cloud Cover" />
+            </Border>
+            <Image
+                x:Name="imgWeatherAnimation"
+                
+                Source="https://raw.githubusercontent.com/davidlfox/mvcquickstart/master/weather.gif"
+                HorizontalOptions="Center"
+                HeightRequest="350"
+                />
+            <Border
+                StrokeShape="RoundRectangle 0,0,5,5"
+                Background="{DynamicResource FrameBackgroundColor}"
+                Padding="10"
+                >
+                <Label Text="Click &quot;Play&quot; to animate" />
+            </Border>
+
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            >
+            <Button
+                Margin="10"
+                MaximumWidthRequest="100"
+                x:Name="playWeatherAnimation"
+                Clicked="playWeatherAnimation_Clicked"
+                Text="Play"
+                >
+            </Button>
+
+            <Button
+                Margin="10"
+                MaximumWidthRequest="100"
+                x:Name="stopWeatherAnimation"
+                Clicked="stopWeatherAnimation_Clicked"
+                Text="Stop"
+                >
+            </Button>
+        </HorizontalStackLayout>
+
+
+        <!--<Frame
+            Margin="20">
+            <ScrollView
+                VerticalScrollBarVisibility="Always"
+                >
+                <WebView 
+                    Source="https://radar.weather.gov/station/klwx/standard" />
+            
+            </ScrollView>
+            
+        </Frame>-->
+
+
     </VerticalStackLayout>
 </ContentPage>
