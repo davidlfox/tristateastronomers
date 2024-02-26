@@ -12,27 +12,27 @@
         <ShellContent 
             Title="MOTD" 
             ContentTemplate="{DataTemplate local:MotdPage}" 
-            Icon="envelope.svg">
+            Icon="envelope">
         </ShellContent>
         <ShellContent 
             Title="Weather" 
             ContentTemplate="{DataTemplate local:WeatherPage}" 
-            Icon="cloud.svg">
+            Icon="cloud">
         </ShellContent>
         <ShellContent 
             Title="Calendar" 
             ContentTemplate="{DataTemplate local:CalendarPage}" 
-            Icon="calendar.svg">
+            Icon="calendar">
         </ShellContent>
         <ShellContent 
             Title="Social" 
             ContentTemplate="{DataTemplate local:SocialPage}" 
-            Icon="user_group.svg">
+            Icon="user_group">
         </ShellContent>
         <ShellContent 
             Title="Settings" 
             ContentTemplate="{DataTemplate local:SettingsPage}" 
-            Icon="gears.svg">
+            Icon="gears">
         </ShellContent>
     </TabBar>
 

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tristate.SocialPage"
-             Title="Social Links"
+             Title="Talk to TSA!"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              >
     <ScrollView>
@@ -14,14 +14,19 @@
                 HorizontalOptions="Center">
 
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding OpenXCommand}"></TapGestureRecognizer>
+                    <TapGestureRecognizer Tapped="OpenXTapped"></TapGestureRecognizer>
                 </Label.GestureRecognizers>
             </Label>
 
             <Image
-                Source="x_twitter.svg"
+                Source="x_twitter"
                 WidthRequest="100"
-                />
+                >
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenXTapped"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label 
                 Margin="0,20,0,0"
@@ -30,7 +35,7 @@
                 HorizontalOptions="Center" />
 
             <Image
-                Source="facebook.svg"
+                Source="facebook"
                 WidthRequest="100"
                 />
 
@@ -41,7 +46,7 @@
                 HorizontalOptions="Center" />
 
             <Image
-                Source="instagram.svg"
+                Source="instagram"
                 WidthRequest="100"
                 />  
         </VerticalStackLayout>

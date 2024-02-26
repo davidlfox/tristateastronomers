@@ -2,8 +2,8 @@ namespace Tristate;
 
 public partial class SocialPage : ContentPage
 {
-	string xDeepUrl = "twitter://user?screen_name=TSAstronomers";
-	string xWebUrl = "";
+    readonly string xDeepUrl = "twitter://user?screen_name=TSAstronomers";
+    readonly string xWebUrl = "https://twitter.com/TSAstronomers";
 
     public SocialPage()
 	{
@@ -11,7 +11,7 @@ public partial class SocialPage : ContentPage
         BindingContext = this;
     }
 
-	public async Task OpenXCommand()
+	public async void OpenXTapped(object sender, TappedEventArgs args)
 	{
         try
         {
