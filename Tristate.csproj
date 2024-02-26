@@ -63,7 +63,6 @@
 	  <None Remove="Resources\Images\facebook.svg" />
 	  <None Remove="Resources\Images\gears.svg" />
 	  <None Remove="Resources\Images\instagram.svg" />
-	  <None Remove="Resources\Images\KLWX_loop.gif" />
 	  <None Remove="Resources\Images\logo_transparent_blacktext.png" />
 	  <None Remove="Resources\Images\logo_transparent_whitetext.png" />
 	  <None Remove="Resources\Images\tsa_logo2.jpg" />

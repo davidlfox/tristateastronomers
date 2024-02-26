@@ -76,19 +76,5 @@
             </Button>
         </HorizontalStackLayout>
 
-
-        <!--<Frame
-            Margin="20">
-            <ScrollView
-                VerticalScrollBarVisibility="Always"
-                >
-                <WebView 
-                    Source="https://radar.weather.gov/station/klwx/standard" />
-            
-            </ScrollView>
-            
-        </Frame>-->
-
-
     </VerticalStackLayout>
 </ContentPage>
